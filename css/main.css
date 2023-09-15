@@ -13,13 +13,14 @@ html {
 
 body {
     font-family: "Montserrat-Regular", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     background-color: #f9f9f9;
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 25px;
 }
+
 h2 {
     font-weight: bold;
     justify-content: center;
@@ -32,8 +33,7 @@ h3 {
 }
 
 .section-title {
-    padding-top: 20px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     font-size: 25px;
     transition: all 400ms;
 }
@@ -46,6 +46,10 @@ h3 {
 .glide__slide {
     display: flex;
     height: auto;
+}
+
+.glide__slide img {
+    width: 100%;
 }
 
 .glide__bullets {
@@ -121,9 +125,12 @@ h3 {
 }
 
 .header-address {
-    font-size: 18px;
-    display: none;
-    font-weight: bold;
+    font-size: 12px;
+    width: 80%;
+}
+
+.header-time {
+    font-size: 12px;
 }
 
 .header-contacts {
@@ -133,7 +140,6 @@ h3 {
 }
 
 .header-tel {
-    font-size: 24px;
     margin-right: 16px;
     color: white;
 }
@@ -182,7 +188,7 @@ h3 {
 /*Баннер - начало*/
 
 .banner {
-    height: 500px;
+    height: auto;
     position: relative;
 }
 
@@ -194,29 +200,27 @@ h3 {
     align-items: flex-start;
     justify-content: center;
     z-index: 1;
-    padding-top: 60px;
-    padding-bottom: 20px;
+    padding: 0;
 }
 
 .banner-welcome {
     color: #FFFFFF;
-    padding: 20px;
-    width: 50%;
+    padding: 30px 20px;
+    width: 100%;
     background-color: rgba(52, 60, 68, 0.8);
 }
 
 .banner-title {
-    font-size: 40px;
-    font-weight: bold;
+   font-weight: bold;
 }
 
-.block-greetings {
+.banner-slides {
     display: flex;
 }
 
 .greetings {
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 14px;
+    line-height: 24px;
     align-self: flex-start;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     padding: 20px 0;
@@ -224,14 +228,13 @@ h3 {
 
 .banner-button-general {
     display: flex;
+    flex-direction: column;
     gap: 15px;
+    margin-top: 15px;
 }
 
 .banner-button {
-    margin-top: 20px;
-    height: 44px;
     display: block;
-    align-self: center;
     text-decoration: none;
     outline: 0;
     background: unset;
@@ -243,7 +246,6 @@ h3 {
 
 .banner-button:hover {
    transform: scale(1.1);
-
 }
 
 .banner-button-border {
@@ -255,6 +257,10 @@ h3 {
     padding: 10px 15px;
     width: 100%;
     border-radius: 5px;
+}
+
+.banner-button-span {
+    font-size: 14px;
 }
 
 .banner-image {
@@ -273,7 +279,42 @@ h3 {
 }
     /*Баннер - конец */
 
-    /* Реклама начало*/
+    /*Приветствие от Анны - начало*/
+.section-greetings {
+    display: flex;
+    justify-content: center;
+}
+
+.block-greetings {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.self-title {
+    text-align: center;
+}
+
+.greetings-img-wrapper {
+    flex-basis: 100%;
+}
+
+.photo-anna {
+    height: 100%;
+    object-fit: cover;
+}
+
+.self-description {
+    display: flex;
+    flex-direction: column;
+    color: #848484;
+    gap: 10px;
+    padding: 20px;
+    font-size: 16px;
+}
+    /*Приветствие-конец*/
+
+/* Реклама начало*/
 .section-pros {
     background-color: #f8cdda;
     display: flex;
@@ -336,6 +377,10 @@ h3 {
     position: relative;
 }
 
+.pros-carousel-arrows {
+    display: none;
+}
+
 .arrows-r, .arrows-l {
     position: absolute;
     top: 50%;
@@ -354,51 +399,18 @@ h3 {
     right: -40px;
 }
 
-    /* Реклама конец*/
-
-    /*Приветствие от Анны - начало*/
-.section-getting {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.block-getting{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-    padding: 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
-}
-
-.foto-anna {
-    width: 50%;
-}
-
-.self-description {
-    display: flex;
-    flex-direction: column;
-    color: #848484;
-    gap: 10px;
-    padding: 20px;
-    font-size: 16px;
-}
-    /*Приветствие-конец*/
+/* Реклама конец*/
 
    /*Карточки с услугами - начало */
 
 .section-service {
     background-color: #f8f7f7;
-    padding: 50px 0 50px;
-}
-
-.section-title-service {
-    padding: 0 0 20px;
+    padding: 24px 0;
 }
 
 .service {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 10px;
     margin: 20px 0;
 }
@@ -461,18 +473,14 @@ h3 {
 }
     /*Карточки с услугами - конец */
 
-    /*Карточки с акциями - начало */
-
-
-
-/*Карточки с акциями - конец */
-
-/*Комплексные программы - начало */
+    /*Комплексные программы - начало */
+.comprehensive-programs {
+    padding: 24px 0;
+}
 
 .comprehensive-block {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
@@ -521,7 +529,7 @@ h3 {
 
 .section-price-list {
     background-color: rgba(248, 229, 236, 0.9);
-    padding: 20px;
+    padding: 24px 0;
 }
 
 .price-title {
@@ -531,10 +539,9 @@ h3 {
 .block-price {
     background-color: #FFFFFF;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    grid-template-columns: 1fr;
     margin: 0 auto;
-    padding: 20px 40px;
+    padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 }
 
@@ -545,7 +552,7 @@ h3 {
 .price-name {
     font-size: 22px;
     font-weight: bold;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .price-name:hover {
@@ -555,18 +562,31 @@ h3 {
 
 .block {
     display: grid;
-    grid-template-columns: 3fr auto;
+    grid-template-columns: 1fr;
     justify-content: space-between;
-    column-gap: 20px;
+    gap: 8px;
     margin-bottom: 10px;
     font-size: 18px;
     font-family: "Raleway", sans-serif;
     color: #595959;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #dedede;
+}
+
+.block:last-of-type {
+    margin-bottom: 0;
+    border: none;
 }
 
 .block:hover {
     cursor: pointer;
     color: #ff5ea5;
+}
+
+.price {
+    text-align: end;
+    font-weight: 500;
+    color: #c7256c;
 }
     /*Прайс лист - конец*/
 
@@ -578,6 +598,10 @@ h3 {
 
 .photo-gallery-track {
     position: relative;
+}
+
+.photo-gallery-arrows {
+    display: none;
 }
 
 .photo-gallery-arrows-r, .photo-gallery-arrows-l {
@@ -594,14 +618,13 @@ h3 {
 
 .photo-gallery-arrows-r:hover, .photo-gallery-arrows-l:hover {
     background-color: rgba(255, 255, 255, 0.9);
-
 }
 
 .photo-gallery-arrows-r {
-    left: 100px;
+    left: 2%;
 }
 .photo-gallery-arrows-l {
-    right: 100px;
+    right: 2%;
 }
 
     /*Фотогалерея - конец*/
@@ -717,13 +740,14 @@ div[class*=box] {
 
 .section-reviews {
     background-color: #FFFFFF;
-    margin: 30px;
+    margin: 30px 15px;
 }
 
-.reviews {
-    padding: 20px;
-
+.section-reviews .container {
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
+
     /*Отзывы клиентов - конец*/
 
    /* Футер - начало*/
@@ -762,8 +786,18 @@ div[class*=box] {
     /* Футер - конец*/
 
 @media (min-width: 768px) {
+    body {
+        font-family: "Montserrat-Regular", sans-serif;
+        font-size: 16px;
+        background-color: #f9f9f9;
+    }
+
     .container {
         max-width: 720px;
+    }
+
+    h1 {
+        font-size: 25px;
     }
 
     section.navbar, p.header-address, div.header-contacts {
@@ -783,7 +817,8 @@ div[class*=box] {
     }
 
     nav.nav {
-        gap: 32px;
+        gap: 10px;
+        font-size: 14px;
         flex-direction: row;
     }
 
@@ -796,26 +831,88 @@ div[class*=box] {
         border-radius: 5px;
     }
 
-    .name-field,
-    .tel-field,
-    .comment-field {
-        width: 70%;
+    .header-address {
+        font-size: 14px;
+        font-weight: bold;
+        width: 100%;
     }
+
+    .header-time {
+        font-size: 14px;
+    }
+
+    .header-tel {
+        font-size: 20px;
+    }
+
     .banner-image img {
         object-position: 75%;
     }
-    .promotions-carousel {
-        height: 400px;
+
+    .banner-greetings {
+        padding: 60px 0;
     }
-    .price-list {
-        gap: 20px;
+
+    .banner-welcome {
+        color: #FFFFFF;
+        padding: 20px;
+        width: 50%;
+        background-color: rgba(52, 60, 68, 0.8);
+    }
+
+    .banner-button-span {
+        font-size: 16px;
+    }
+
+    .section-greetings {
+        margin: 24px 0;
+    }
+
+    .greetings {
         font-size: 20px;
+        line-height: 36px;
     }
-    .price-image {
+
+    .block-greetings {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    }
+
+    .section-service {
+        padding: 50px 0;
+    }
+
+    .service {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin: 20px 0;
+    }
+    .section-price-list {
+        padding: 24px;
+    }
+    .block-price {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        padding: 20px 40px;
+    }
+    .price-name {
+        margin: 20px 0;
+    }
+
+    .comprehensive-block {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .photo-gallery-arrows {
         display: block;
     }
-    .certificate-text {
-        font-size: 40px;
+
+    .pros-carousel-arrows {
+        display: block;
+    }
+
+    .section-reviews {
+        margin: 30px;
     }
 }
 
@@ -823,23 +920,45 @@ div[class*=box] {
     .container {
         max-width: 960px;
     }
+
+    nav.nav {
+        gap: 25px;
+        font-size: 16px;
+        flex-direction: row;
+    }
+
     .carousel .massage-technique {
         width: calc(100% / 3.25);
     }
-    .specialist:hover .people-info {
-        bottom: 0;
+
+    .header-tel {
+        font-size: 22px;
     }
-    .people-info {
-        bottom: -60px;
+
+    .header-address {
+        font-size: 18px;
+        font-weight: bold;
+        width: 100%;
     }
-    .block-promotions {
-        display: flex;
-    }
+
     .banner-image img {
         object-position: 70%;
     }
-    .certificate {
-        width: 50%;
+
+    .banner-button-general {
+        flex-direction: row;
+    }
+
+    .block-greetings {
+        flex-direction: row;
+    }
+
+    .self-title {
+        text-align: start;
+    }
+
+    .greetings-img-wrapper {
+        flex: 1 0 50%;
     }
 
     .list-wrapper {
@@ -854,6 +973,10 @@ div[class*=box] {
 
     .banner-image img {
         object-position: 60%;
+    }
+
+    .block {
+        gap: 0;
     }
 }
 

@@ -5,21 +5,6 @@ menu.addEventListener('click', () => {
     navbar.classList.toggle("is-open");
 });
 
-// new Glide('.j-service-carousel', {
-//     type: 'carousel',
-//     startAt: 0,
-//     perView: 3,
-//     breakpoints: {
-//         767: {
-//             perView: 1,
-//         },
-//         991: {
-//             perView: 2,
-//         }
-//     },
-//     gap: 10,
-//     swipeThreshold: 20,
-// }).mount()
 new Glide('.j-greetings-carousel', {
     type: 'carousel',
     startAt: 0,
@@ -30,10 +15,37 @@ new Glide('.j-greetings-carousel', {
     swipeThreshold: 20,
 }).mount()
 
+new Glide('.j-pros-carousel', {
+    type: 'carousel',
+    startAt: 0,
+    perView: 5,
+    breakpoints: {
+        767: {
+            perView: 1,
+        },
+        991: {
+            perView: 3,
+        }
+    },
+    gap: 10,
+    animationDuration: 800,
+    autoplay: 3000,
+    swipeThreshold: 20,
+    keyboard: true,
+}).mount()
+
 new Glide('.j-photo-carousel', {
     type: 'carousel',
     startAt: 0,
     perView: 4,
+    breakpoints: {
+        767: {
+            perView: 1,
+        },
+        991: {
+            perView: 3,
+        }
+    },
     gap: 10,
     animationDuration: 800,
     autoplay: 5000,
@@ -41,15 +53,6 @@ new Glide('.j-photo-carousel', {
     keyboard: true,
 }).mount()
 
-new Glide('.j-pros-carousel', {
-    type: 'carousel',
-    startAt: 0,
-    perView: 5,
-    gap: 10,
-    animationDuration: 800,
-    autoplay: 2000,
-    swipeThreshold: 20,
-    keyboard: true,
-}).mount()
+
 
 

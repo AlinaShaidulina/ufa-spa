@@ -21,7 +21,7 @@
                 <img class="header-logo" src="icons/logo.png" alt="logo">
                 <div class="header-info-left">
                     <p class="header-address">г. Уфа ул. Октябрьской Революции 54 А</p>
-                    <p>С 9:00 до 22:00 ежедневно</p>
+                    <p class="header-time">С 9:00 до 22:00 ежедневно</p>
                 </div>
             </div>
 
@@ -55,12 +55,12 @@
     </section>
 
     <section class="banner">
-        <div class="banner-greetings container">
+        <div class="banner-greetings banner-container container">
             <div class="banner-welcome">
                 <h1 class="banner-title">Массаж и спа в Уфе</h1>
                 <div class="glide j-greetings-carousel">
                     <div class="glide__track" data-glide-el="track">
-                        <ul class="glide_slides block-greetings">
+                        <ul class="glide_slides banner-slides">
                             <li class="glide__slide greetings">
                                 <ul>
                                     <li>Первый пробный сеанс <strong>со скидкой 60% </strong></li>
@@ -75,13 +75,13 @@
                 </div>
                 <div class="banner-button-general">
                     <a href="https://vk.com/bodyharmoni" class="banner-button">
-                    <div class="banner-button-border">
-                        <span>Написать ВКонтакте</span>
-                    </div>
-                </a>
+                        <div class="banner-button-border">
+                            <span class="banner-button-span">Написать ВКонтакте</span>
+                        </div>
+                    </a>
                     <a href="https://dikidi.net/1251372?p=0.pi" class="banner-button">
                         <div class="banner-button-border">
-                            <span>Записаться</span>
+                            <span class="banner-button-span">Записаться</span>
                         </div>
                     </a>
                 </div>
@@ -92,16 +92,18 @@
         </div>
     </section>
 
-    <section class="section-getting">
-        <div class="block-getting container">
-                <img src="images/anna_foto.jpg" alt="" class="foto-anna">
+    <section class="section-greetings">
+        <div class="block-greetings container">
+            <div class="greetings-img-wrapper">
+                <img src="images/anna_photo.jpg" alt="" class="photo-anna">
+            </div>
             <div class="self-description">
-                <p>Меня зовут Анна и я занимаюсь тем, что уже долгое время радую людей всевозможными видами массажа и услугами по эстетической косметологии.</p>
-                <p>Мой стаж более 5 лет.</p>
-                <p>Еще при получении медицинского образования меня заинтересовала сфера красоты и ухода за собой.</p>
-                <p>Сейчас у меня за спиной обширный опыт и знания по массажной практике. Я люблю и умею общаться с людьми, находить индивидуальный подход к задачам и целям, чтобы делать вашу жизнь лучше, полноценнее и приятнее.</p>
-                <p>Буду рада видеть всех у себя на сеансах. Жду новые лица и приглашаю Вас к себе на незабываемые процедуры массажа и спа.</p>
-                <p>Вас ждут приятные подарки на день рождения и скидки на абонементы!</p>
+                <p class="self-title">Меня зовут Анна и я занимаюсь тем, что уже долгое время радую людей всевозможными видами массажа и услугами по эстетической косметологии.</p>
+                <p class="self-title">Мой стаж более 5 лет.</p>
+                <p class="self-title">Еще при получении медицинского образования меня заинтересовала сфера красоты и ухода за собой.</p>
+                <p class="self-title">Сейчас у меня за спиной обширный опыт и знания по массажной практике. Я люблю и умею общаться с людьми, находить индивидуальный подход к задачам и целям, чтобы делать вашу жизнь лучше, полноценнее и приятнее.</p>
+                <p class="self-title">Буду рада видеть всех у себя на сеансах. Жду новые лица и приглашаю Вас к себе на незабываемые процедуры массажа и спа.</p>
+                <p class="self-title">Вас ждут приятные подарки на день рождения и скидки на абонементы!</p>
             </div>
         </div>
     </section>
@@ -126,7 +128,7 @@
                         <li class="adv glide__slide">Найдём всегда для вас свободное окошко</li>
                     </ul>
                 </div>
-                <div data-glide-el="controls">
+                <div data-glide-el="controls" class="pros-carousel-arrows">
                     <button data-glide-dir="<" class="arrows-r"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15.5992 4.47933C16.1629 5.0864 16.1277 6.03549 15.5207 6.5992L9.70442 12L15.5207 17.4008C16.1277 17.9645 16.1629 18.9136 15.5992 19.5207C15.0355 20.1278 14.0864 20.1629 13.4793 19.5992L6.47932 13.0992C6.17367 12.8154 6 12.4171 6 12C6 11.5829 6.17367 11.1846 6.47932 10.9008L13.4793 4.40082C14.0864 3.83711 15.0355 3.87226 15.5992 4.47933Z" fill="currentColor"/>
                     </svg></button>
@@ -140,7 +142,7 @@
 
     <section id="service" class="section-service">
         <div class="container block-service">
-            <h2 class="section-title section-title-service">Мы предлагаем широкий выбор услуг</h2>
+            <h2 class="section-title">Мы предлагаем широкий выбор услуг</h2>
             <ul class="service">
                 <li class="card-service">
                     <div class="img-wrapper">
@@ -171,148 +173,145 @@
                 </li>
             </ul>
         </div>
-        </section>
+    </section>
 
     <section id="price-list" class="section-price-list">
-            <div class="container container-price-list">
-                <h2 class="section-title price-title">Прайс лист</h2>
-                <div class="block-price">
-                    <div class="block-left">
-                        <p class="price-name">Спа-услуги</p>
-                        <ul class="price-list">
-                            <li class="block">
-                                <div class="service-item">Посещение фитобочки</div>
-                                <p class="price">500 рублей</p>
-                            </li>
-                            <li class="block">
-                                <div class="service-item">Скрабирование тела</div>
-                                <p class="price">1000 рублей</p>
-                            </li>
-                            <li class="block">
-                                <div class="service-item">Обертывание тела</div>
-                                <p class="price">1000 рублей</p>
-                            </li>
-                            <li class="block">
-                                <div class="service-item">Огненное похудение 7+7</div>
-                                <p class="price">14500 рублей</p>
-                            </li>
-                            <li class="block">
-                                <div class="service-item">Взрывное похудение 10+10</div>
-                                <p class="price">18500 рублей</p>
-                            </li>
-                        </ul>
-                        <p class="price-name">Массаж</p>
-                        <ul class="price-list">
-                            <li class="block">
-                                <div class="service-item">Буккальный массаж лица</div>
-                                <p class="price">999 рублей</p>
-                            </li>
-                            <li class="block">
-                                <div class="service-item">Пробный массаж тела</div>
-                                <p class="price">999 рублей</p>
-                            </li>
-                            <li class="block">
-                                <div class="service-item">Аппаратный массаж <p>(15 минут)</p></div>
-                                <p class="price">500 рублей</p>
-                            </li>
-                            <li class="block">
-                                <div class="service-item">Прессотерапия ног <p>(15 минут)</p></div>
-                                <p class="price">500 рублей</p>
-                            </li>
-                            <li class="block">
-                                <div class="service-item">Массаж спины <p>(30 минут)</p></div>
-                                <p class="price">999 рублей</p>
-                            </li>
+        <div class="container container-price-list">
+            <h2 class="section-title price-title">Прайс лист</h2>
+            <div class="block-price">
+                <div class="block-left">
+                    <h3 class="price-name">Спа-услуги</h3>
+                    <ul class="price-list">
+                        <li class="block">
+                            <div class="service-item">Посещение фитобочки</div>
+                            <p class="price">500 рублей</p>
+                        </li>
+                        <li class="block">
+                            <div class="service-item">Скрабирование тела</div>
+                            <p class="price">1000 рублей</p>
+                        </li>
+                        <li class="block">
+                            <div class="service-item">Обертывание тела</div>
+                            <p class="price">1000 рублей</p>
+                        </li>
+                        <li class="block">
+                            <div class="service-item">Огненное похудение 7+7</div>
+                            <p class="price">14500 рублей</p>
+                        </li>
+                        <li class="block">
+                            <div class="service-item">Взрывное похудение 10+10</div>
+                            <p class="price">18500 рублей</p>
+                        </li>
+                    </ul>
+                    <h3 class="price-name">Массаж</h3>
+                    <ul class="price-list">
+                        <li class="block">
+                            <div class="service-item">Буккальный массаж лица</div>
+                            <p class="price">999 рублей</p>
+                        </li>
+                        <li class="block">
+                            <div class="service-item">Пробный массаж тела</div>
+                            <p class="price">999 рублей</p>
+                        </li>
+                        <li class="block">
+                            <div class="service-item">Аппаратный массаж <p>(15 минут)</p></div>
+                            <p class="price">500 рублей</p>
+                        </li>
+                        <li class="block">
+                            <div class="service-item">Прессотерапия ног <p>(15 минут)</p></div>
+                            <p class="price">500 рублей</p>
+                        </li>
+                        <li class="block">
+                            <div class="service-item">Массаж спины <p>(30 минут)</p></div>
+                            <p class="price">999 рублей</p>
+                        </li>
                             <li class="block">
                                 <div class="service-item">Массаж спины <p>(45 минут)</p></div>
                                 <p class="price">1450 рублей</p>
-                            </li>
-                            <li class="block">
-                                <div class="service-item">Лимфодренажный массаж тела<p>(60 минут)</p></div>
-                                <p class="price">2499 рублей</p>
-                            </li>
+                        </li>
+                        <li class="block">
+                            <div class="service-item">Лимфодренажный массаж тела<p>(60 минут)</p></div>
+                            <p class="price">2499 рублей</p>
+                        </li>
                             <li class="block">
                                 <div class="service-item">Антицеллюлитный масса тела<p>(60 минут)</p></div>
                                 <p class="price">2499 рублей</p>
-                            </li>
-                            <li class="block">
-                                <div class="service-item">Спортивный массаж тела<p>(60 минут)</p></div>
-                                <p class="price">2499 рублей</p>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <div class="block-right">
-                            <p class="price-name">Абонементы на массаж</p>
-                            <ul class="price-list">
-                                <li class="block">
-                                    <div class="service-item">Абонемент на 5 сеансов<p> по 45 минут</p></div>
-                                    <p class="price">6500 рублей</p>
-                                </li>
-                                <li class="block">
-                                    <div class="service-item">Абонемент на 10 сеансов<p> по 45 минут</p></div>
-                                    <p class="price">12500 рублей</p>
-                                </li>
-                                <li class="block">
-                                    <div class="service-item">Абонемент на 5 сеансов<p> по 60 минут</p></div>
-                                    <p class="price">7999 рублей</p>
-                                </li>
-                                <li class="block">
-                                    <div class="service-item">Абонемент на 10 сеансов<p> по 60 минут</p></div>
-                                    <p class="price">15999 рублей</p>
-                                </li>
-                                <li class="block">
-                                    <div class="service-item">АппАбонемент на 5 сеансов <p>по 30 минут</p></div>
-                                    <p class="price">4500 рублей</p>
-                                </li>
-                                <li class="block">
-                                    <div class="service-item">АппАбонемент на 5 сеансов <p>по 30 минут</p></div>
-                                    <p class="price">7500 рублей</p>
-                                </li>
-                            </ul>
-                         <p class="price-name">Депиляция (воском/сахаром)</p>
-                            <ul class="price-list">
-                                <li class="block">
-                                    <div class="service-item">Депиляция подмышечных впадин</div>
-                                    <p class="price">250 рублей</p>
-                                </li>
-                                <li class="block">
-                                    <div class="service-item">Депиляция рук</div>
-                                    <p class="price">500 рублей</p>
-                                </li>
-                                <li class="block">
-                                    <div class="service-item">Депиляция зоны бикини</div>
-                                    <p class="price">500 рублей</p>
-                                </li>
-                                <li class="block">
-                                    <div class="service-item">Депиляция голени/бедра</div>
-                                    <p class="price">600 рублей</p>
-                                </li>
-                                <li class="block">
-                                    <div class="service-item">Глубокое бикини</div>
-                                    <p class="price">900 рублей</p>
-                                </li>
-                                <li class="block">
-                                    <div class="service-item">Депиляция ног (полностью)</div>
-                                    <p class="price">1100 рублей</p>
-                                </li>
-                                <li class="block">
-                                    <div class="service-item">Комплекс 1. Подмышки+ глубокое бикини </div>
-                                    <p class="price">1000 рублей</p>
-                                </li>
-                                <li class="block">
-                                    <div class="service-item">Комплекс 2. Глубокое бикини + подмышки+ голени</div>
-                                    <p class="price">1600 рублей</p>
-                                </li>
-                                <li class="block">
-                                    <div class="service-item">Комплекс 3. Глубокое бикини + подмышки+ ноги полностью</div>
-                                    <p class="price">2100 рублей</p>
-                                </li>
-                            </ul>
-                        </div>
+                        </li>
+                        <li class="block">
+                            <div class="service-item">Спортивный массаж тела<p>(60 минут)</p></div>
+                            <p class="price">2499 рублей</p>
+                        </li>
+                    </ul>
                 </div>
-
-
+                <div class="block-right">
+                    <h3 class="price-name">Абонементы на массаж</h3>
+                    <ul class="price-list">
+                        <li class="block">
+                            <div class="service-item">Абонемент на 5 сеансов<p> по 45 минут</p></div>
+                            <p class="price">6500 рублей</p>
+                        </li>
+                        <li class="block">
+                            <div class="service-item">Абонемент на 10 сеансов<p> по 45 минут</p></div>
+                            <p class="price">12500 рублей</p>
+                        </li>
+                        <li class="block">
+                            <div class="service-item">Абонемент на 5 сеансов<p> по 60 минут</p></div>
+                            <p class="price">7999 рублей</p>
+                        </li>
+                        <li class="block">
+                            <div class="service-item">Абонемент на 10 сеансов<p> по 60 минут</p></div>
+                            <p class="price">15999 рублей</p>
+                        </li>
+                        <li class="block">
+                            <div class="service-item">АппАбонемент на 5 сеансов <p>по 30 минут</p></div>
+                            <p class="price">4500 рублей</p>
+                        </li>
+                        <li class="block">
+                            <div class="service-item">АппАбонемент на 5 сеансов <p>по 30 минут</p></div>
+                            <p class="price">7500 рублей</p>
+                        </li>
+                    </ul>
+                    <h3 class="price-name">Депиляция (воском/сахаром)</h3>
+                    <ul class="price-list">
+                        <li class="block">
+                            <div class="service-item">Депиляция подмышечных впадин</div>
+                            <p class="price">250 рублей</p>
+                        </li>
+                        <li class="block">
+                            <div class="service-item">Депиляция рук</div>
+                            <p class="price">500 рублей</p>
+                        </li>
+                        <li class="block">
+                            <div class="service-item">Депиляция зоны бикини</div>
+                            <p class="price">500 рублей</p>
+                        </li>
+                        <li class="block">
+                            <div class="service-item">Депиляция голени/бедра</div>
+                            <p class="price">600 рублей</p>
+                        </li>
+                        <li class="block">
+                            <div class="service-item">Глубокое бикини</div>
+                            <p class="price">900 рублей</p>
+                        </li>
+                        <li class="block">
+                            <div class="service-item">Депиляция ног (полностью)</div>
+                            <p class="price">1100 рублей</p>
+                        </li>
+                        <li class="block">
+                            <div class="service-item">Комплекс 1. Подмышки+ глубокое бикини </div>
+                            <p class="price">1000 рублей</p>
+                        </li>
+                        <li class="block">
+                            <div class="service-item">Комплекс 2. Глубокое бикини + подмышки+ голени</div>
+                            <p class="price">1600 рублей</p>
+                        </li>
+                        <li class="block">
+                            <div class="service-item">Комплекс 3. Глубокое бикини + подмышки+ ноги полностью</div>
+                            <p class="price">2100 рублей</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -490,7 +489,7 @@
                 <button class="glide__bullet bullet" data-glide-dir="=8"></button>
                 <button class="glide__bullet bullet" data-glide-dir="=9"></button>
             </div>
-            <div data-glide-el="controls">
+            <div data-glide-el="controls" class="photo-gallery-arrows">
                 <button data-glide-dir="<" class="photo-gallery-arrows-r"><svg width="32" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15.5992 4.47933C16.1629 5.0864 16.1277 6.03549 15.5207 6.5992L9.70442 12L15.5207 17.4008C16.1277 17.9645 16.1629 18.9136 15.5992 19.5207C15.0355 20.1278 14.0864 20.1629 13.4793 19.5992L6.47932 13.0992C6.17367 12.8154 6 12.4171 6 12C6 11.5829 6.17367 11.1846 6.47932 10.9008L13.4793 4.40082C14.0864 3.83711 15.0355 3.87226 15.5992 4.47933Z" fill="currentColor"/>
                 </svg></button>
@@ -514,12 +513,10 @@
      <section id="map" class="section-map">
         <h2 class="section-title title-map">Наше местоположение</h2>
         <div class="container">
-            <div style="position:relative;overflow:hidden;" class="map-item">
-                <div style="position:relative;overflow:hidden;">
-                    <a href="https://yandex.ru/maps/org/garmoniya_tela/50160536472/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Гармония тела</a>
-                    <a href="https://yandex.ru/maps/172/ufa/category/spa/184105818/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Спа-салон в Уфе</a>
-                    <iframe src="https://yandex.ru/map-widget/v1/?ll=55.965581%2C54.719719&mode=search&oid=50160536472&ol=biz&sctx=ZAAAAAgCEAAaKAoSCZ%2FouvCDJUtAEfD8ogT9CUxAEhIJdELooEs40D8RwLM9esN9tD8iBgABAgMEBSgKOABA6lZIAWIacmVsZXZfbmV3X2dlb2FkZHJfcm91dGVyPTFiKmNvbGxlY3Rpb25zX3JhbmtpbmdfbW9kZWw9Y29sbGVjdGlvbnNfZHNzbWoCcnWdAc3MTD2gAQCoAQC9AYfXz0zCARiYl7TuugHW89Tq8gLigouKtwHy%2FojNiwHqAQDyAQD4AQCCAiDQk9Cw0YDQvNC%2B0L3QuNGPINGC0LXQu9CwINGD0YTQsIoCAJICAzE3MpoCDGRlc2t0b3AtbWFwcw%3D%3D&sll=55.965581%2C54.719719&sspn=0.033049%2C0.014749&tab=features&text=%D0%93%D0%B0%D1%80%D0%BC%D0%BE%D0%BD%D0%B8%D1%8F%20%D1%82%D0%B5%D0%BB%D0%B0%20%D1%83%D1%84%D0%B0&z=15.45" width="1290" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
-                </div>
+            <div style="position:relative;overflow:hidden;">
+                <a href="https://yandex.ru/maps/org/garmoniya_tela/50160536472/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Гармония тела</a>
+                <a href="https://yandex.ru/maps/172/ufa/category/spa/184105818/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Спа-салон в Уфе</a>
+                <iframe src="https://yandex.ru/map-widget/v1/?display-text=%D0%B3%D0%B0%D1%80%D0%BC%D0%BE%D0%BD%D0%B8%D1%8F%20%D1%82%D0%B5%D0%BB%D0%B0%20%D1%83%D1%84%D0%B0&filter=alternate_vertical%3AWhatWhere&ll=55.962762%2C54.717244&mode=search&oid=50160536472&ol=biz&sctx=ZAAAAAgCEAAaKAoSCUUvo1hu8UdAEakT0ETYUExAEhIJfEYiNIKNzz8RN%2F%2BvOnKksz8iBgABAgMEBSgKOABAkc0GSAFiEnBvaW50X2NvbnRleHRfdjI9MWIqY29sbGVjdGlvbnNfcmFua2luZ19tb2RlbD1jb2xsZWN0aW9uc19kc3NtagJydZ0BzcxMPaABAKgBAL0Bh9fPTMIBDJiXtO66Adbz1OryAuoBAPIBAPgBAIICINCz0LDRgNC80L7QvdC40Y8g0YLQtdC70LAg0YPRhNCwigIAkgIDMTcymgIMZGVza3RvcC1tYXBz&sll=55.962762%2C54.717244&sspn=0.017107%2C0.007635&text=%D0%B3%D0%B0%D1%80%D0%BC%D0%BE%D0%BD%D0%B8%D1%8F%20%D1%82%D0%B5%D0%BB%D0%B0%20%D1%83%D1%84%D0%B0&z=16.4" width="100%" height="550px" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
             </div>
         </div>
      </section>
