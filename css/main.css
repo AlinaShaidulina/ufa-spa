@@ -321,7 +321,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px 0 40px;
+    padding: 24px 0 40px;
 
 }
 
@@ -760,7 +760,14 @@ div[class*=box] {
 }
 
 .block-footer {
-    text-align: end;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-company-name {
+    font-weight: bold;
+    margin-bottom: 6px;
 }
 
 .social-network {
@@ -878,7 +885,7 @@ div[class*=box] {
     }
 
     .section-service {
-        padding: 50px 0;
+        padding: 24px 0;
     }
 
     .service {
@@ -887,9 +894,7 @@ div[class*=box] {
         gap: 10px;
         margin: 20px 0;
     }
-    .section-price-list {
-        padding: 24px;
-    }
+
     .block-price {
         grid-template-columns: 1fr 1fr;
         gap: 40px;
@@ -913,6 +918,10 @@ div[class*=box] {
 
     .section-reviews {
         margin: 30px;
+    }
+    .block-footer {
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 
